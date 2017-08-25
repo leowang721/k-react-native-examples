@@ -1,23 +1,25 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+/**
+ * @file Main Entrance
+ *
+ * @author Leo Wang(leowang721@gmail.com)
+ */
+
+import React from 'react'
+import { StackNavigator } from 'react-navigation'
+import HomeScreen from './lib/HomeScreen'
+import ActivityIndicator from './lib/component/ActivityIndicator'
+import Button from './lib/component/Button'
+
+const Navigator = StackNavigator({
+  HomeScreen: {screen: HomeScreen},
+  ActivityIndicator: {screen: ActivityIndicator},
+  Button: {screen: Button}
+})
 
 export default class App extends React.Component {
-  render() {
+  render () {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
+      <Navigator />
+    )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

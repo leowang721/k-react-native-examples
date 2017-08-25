@@ -1792,6 +1792,10 @@ event-target-shim@^1.0.5:
   version "1.1.1"
   resolved "http://npm.in.zhihu.com/event-target-shim/-/event-target-shim-1.1.1.tgz#a86e5ee6bdaa16054475da797ccddf0c55698491"
 
+events@^1.0.2:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
+
 exec-async@^2.2.0:
   version "2.2.0"
   resolved "http://npm.in.zhihu.com/exec-async/-/exec-async-2.2.0.tgz#c7c5ad2eef3478d38390c6dd3acfe8af0efc8301"
@@ -3198,6 +3202,18 @@ jws@^3.1.4:
     base64url "^2.0.0"
     jwa "^1.1.4"
     safe-buffer "^5.0.1"
+
+k-react-native-core@^0.0.2-alpha.6:
+  version "0.0.2-alpha.6"
+  resolved "https://registry.yarnpkg.com/k-react-native-core/-/k-react-native-core-0.0.2-alpha.6.tgz#cf8072851be4e6f768d516663e6d1bad879813fe"
+  dependencies:
+    events "^1.0.2"
+
+k-react-native-layout@^0.0.2-alpha.6:
+  version "0.0.2-alpha.6"
+  resolved "https://registry.yarnpkg.com/k-react-native-layout/-/k-react-native-layout-0.0.2-alpha.6.tgz#21f78e0f3fa5f244f50a58b95508704a9c02e556"
+  dependencies:
+    k-react-native-core "^0.0.2-alpha.6"
 
 kind-of@^3.0.2:
   version "3.2.2"
